@@ -12,7 +12,7 @@ class Courses extends Component {
     }
 
     openCoursePage = (id, title) => {
-        this.props.history.push('/courses/course/' + id + "?title=" + title);
+        this.props.history.push(this.props.match.url+ "/" + id + "?title=" + title);
     }
 
 
